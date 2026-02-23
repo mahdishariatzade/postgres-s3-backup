@@ -1,8 +1,7 @@
-FROM alpine:3.19
+FROM postgres:17-alpine
 
-# Install PostgreSQL client, AWS CLI, and bash
+# Install AWS CLI and bash
 RUN apk add --no-cache \
-    postgresql16-client \
     aws-cli \
     bash
 
